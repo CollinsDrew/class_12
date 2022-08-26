@@ -13,3 +13,8 @@ ctx.fillRect(0,0,150,75);
 ctx.moveTo(0,0);
 ctx.lineTo(200,200);
 ctx.stroke();
+
+//circle
+ctx.beginPath();
+ctx.arc(200,200,20,0,2 * Math.PI);
+ctx.stroke();
