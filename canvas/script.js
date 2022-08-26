@@ -32,4 +32,10 @@ grd.addColorStop(1,"red");
 
 //Fill with gradient
 ctx.fillStyle = grd;
-ctx.fillRect(0,400,600,80);
+ctx.fillRect(0,400,600,200);
+
+//text
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 400,50);
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World", 400,100);
