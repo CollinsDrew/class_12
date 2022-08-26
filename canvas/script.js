@@ -16,5 +16,5 @@ ctx.stroke();
 
 //circle
 ctx.beginPath();
-ctx.arc(200,200,20,0,2 * Math.PI);
+ctx.arc(200,200,100,0,2 * Math.PI);
 ctx.stroke();
