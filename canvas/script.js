@@ -19,12 +19,17 @@ ctx.arc(200,200,100,0,2 * Math.PI);
 ctx.stroke();
 
 //gradient
-let grd = ctx.createLinearGradient (0,0,200,0);
+let grd = ctx.createLinearGradient (0,0,600,250);
 grd.addColorStop(0,"red");
-grd.addColorStop(0.25,"blue");
-grd.addColorStop(0.5,"yellow");
-grd.addColorStop(1,"green");
+grd.addColorStop(0.1,"blue");
+grd.addColorStop(0.2,"green");
+grd.addColorStop(0.3,"yellow");
+grd.addColorStop(0.5,"white");
+grd.addColorStop(0.6,"yellow");
+grd.addColorStop(0.7,"green");
+grd.addColorStop(0.8,"blue");
+grd.addColorStop(1,"red");
 
 //Fill with gradient
 ctx.fillStyle = grd;
-ctx.fillRect(100,400,150,80);
+ctx.fillRect(0,400,600,80);
