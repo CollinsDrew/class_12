@@ -1,7 +1,9 @@
 'use strict'
 
+
+
 const data = {
-    labels: lables,
+    labels: ['a','b','c','d','e','f'],
     datasets: [{
         label: 'My Class Training',
         backgroundColor:
@@ -18,12 +20,12 @@ const data = {
 }
 
 const config = {
-    type: 'line',
+    type: 'doughnut',
     data: data,
     options: {}
 };
 
 const myChart = new Chart(
-    document.getElementById(myChart),
+    document.getElementById('myChart'),
     config
 );
