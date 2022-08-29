@@ -8,20 +8,19 @@ function colorGenerator(){
     return `rgb(${red},${green},${blue})`;
 }
 
-console.log(colorGenerator());
+const labels = ['a','b','c','d','e','f'];
+
+const differentColors = [];
+
+for (let i =0; i < labels.length; i++){
+    differentColors.push(colorGenerator());
+}
 
 const data = {
     labels: ['a','b','c','d','e','f'],
     datasets: [{
         label: 'My Class Training',
-        backgroundColor:
-    [   'black',
-        'green',
-        'orange',
-        'red',
-        'yellow',
-        'purple',  ],
-
+        backgroundColor: differentColors,
         borderColor: 'black',
         data: [10, 10, 5, 2, 20, 30, 45],
     }]
