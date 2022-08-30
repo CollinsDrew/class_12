@@ -1,5 +1,18 @@
 'use strict'
 
+const differentCharts = ['doughnut','bar'
+,'bubble','pie','line',
+'radar','polarArea','scatter'];
+
+let myChart;
+
+function initiateChart() {
+
+  if(myChart){
+    myChart.destroy();
+  }
+
+
 //color generator
 function colorGenerator(){
     let red = Math.floor(Math.random()*255);
@@ -30,16 +43,22 @@ const data = {
 }]
 };
 
+function getChart(){
+    
+    return Math.floor(Math.random()*8);}
+
 //step 2
 const config = {
-    type: 'bar',
+    type: differentCharts[getChart()],
     data: data,
     options:{}
 };
 
 
 //step 1
-const myChart = new Chart(
+myChart = new Chart(
     document.getElementById("chartz"),
     config
 );
+
+}
