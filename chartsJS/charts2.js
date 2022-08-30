@@ -1,5 +1,6 @@
 'use strict'
 
+//change graph button
 const differentCharts = ['doughnut','bar'
 ,'bubble','pie','line',
 'radar','polarArea','scatter'];
@@ -43,6 +44,7 @@ const data = {
 }]
 };
 
+//change graph button
 function getChart(){
     
     return Math.floor(Math.random()*8);}
