@@ -14,6 +14,15 @@
     <h1> Hello charts</h1>
     <button onclick="initiateChart()">Change graph type</button>
 
+<form onsubmit="formSubmitted(event)">
+
+        <input type="name" name="month" placeholder="Enter month" required/>
+        <input type="number" name="dataValue" placeholder="Enter number" required/>
+
+        <button type="submit">Submit</button>
+
+</form>
+
     <canvas id="chartz"></canvas>
 </div>
 

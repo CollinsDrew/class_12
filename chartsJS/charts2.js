@@ -5,7 +5,25 @@ const differentCharts = ['doughnut','bar'
 ,'bubble','pie','line',
 'radar','polarArea','scatter'];
 
+let month;
+let dataValue;
+
+const lbs = [];
+const dataArray = [];
+
 let myChart;
+
+//form
+function formSubmitted(event){
+    event.preventDefault();
+    month = event.target.month.value;
+    dataValue = event.target.dataValue.value;
+
+    lbs.push(month);
+    dataArray.push(parseInt(dataValue));
+
+}
+
 
 function initiateChart() {
 
@@ -23,7 +41,7 @@ function colorGenerator(){
     return `rgb(${red}, ${green}, ${blue})`;
 };
 
-const lbs = ['Jan', 'Feb','Mar', 'Apr', 'May','June'];
+
 
 const differentColors = [];
 
@@ -40,7 +58,7 @@ const data = {
         label: 'My Class Training',
         backgroundColor: differentColors,
         borderColor: 'black',
-        data: [15, 10, 25, 2, 20, 30],
+        data: dataArray,
 }]
 };
 
