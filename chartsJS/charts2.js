@@ -13,6 +13,9 @@ const dataArray = [];
 
 let myChart;
 
+
+
+
 //form
 function formSubmitted(event){
     event.preventDefault();
@@ -21,6 +24,14 @@ function formSubmitted(event){
 
     lbs.push(month);
     dataArray.push(parseInt(dataValue));
+
+    //storage
+
+    localStorage.setItem("month", month);
+    localStorage.setItem("dataValue",dataValue);
+    
+    document.getElementById("result").innerHTML = localStorage.getItem("month");
+    document.getElementById("result2").innerHTML = localStorage.getItem("dataValue");
 
 }
 
